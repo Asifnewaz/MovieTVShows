@@ -51,11 +51,6 @@ class MovieListController: UIViewController {
                 _ = self.movieListCoordinator?.showMovieDetails(vm.element?.movie)
             })
             .disposed(by: disposeBag)
-        
-        //https://stackoverflow.com/questions/43323645/how-to-select-collectionview-cell-in-rxswift
-//        movieListCollectionView.rx.modelSelected(MovieViewModel.self)
-//            .bind(to: viewModel.selectMovieDetails)
-//            .disposed(by: disposeBag)
     }
     
     private func setupMovieCell(_ cell: MovieCell, movie: MovieViewModel) {
